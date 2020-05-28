@@ -42,3 +42,15 @@ Iniciamos bot en telegram: nombre_visible
     /start
 ```
 Enviamos desde telegram  ```On``` y ```Off``` para encender y apagar led
+
+## Configuraciones raspberry
+Para agregar que se ejecute automaticamente junto con el inicio de OS seguir los paso de [script_init](https://github.com/eus-dev7/script_init)
+
+Cuando se reinicie la Raspberry debería empezar a funcionar el programa de forma automática. Podemos comprobarlo haciendo:
+```ssh
+    ps aux | grep "telegram_bot.py"
+```
+Prueba de token en la raspberry con:
+```ssh
+    python
+```
